@@ -1,0 +1,47 @@
+.container {
+
+display: grid;
+grid-template-areas: "header header" "sidebar content" "comment";
+
+gap: 5px;
+grid-template-columns: 160px; 1fr;
+grid-template-rows: 100px; 1fr;
+
+}
+
+.header {
+
+    height: 100px;
+    grid-area: header;
+    background-color: red;
+    align-items: center;
+    justify-items: center;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    align-self: start;
+}
+
+.review {
+     grid-area: content;
+     height: 1000px;
+     background-image: url('1.jpeg');
+     background-repeat: no-repeat;
+     background-position: left 0px top 250px;
+
+}
+
+.item {
+    border: 1px solid black;
+    padding: 5px;
+
+}
+
+.comment {
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    vertical-align: top;
+}
+}
