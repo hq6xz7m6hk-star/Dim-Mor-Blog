@@ -1,1 +1,3 @@
-"# Dim-Mor-Blog" 
+# Dim-Mor-Blog 
+
+## Install
