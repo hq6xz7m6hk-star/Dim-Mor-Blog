@@ -1,22 +1,20 @@
 .container {
 
 display: grid;
-grid-template-areas: "header header" "sidebar content" "comment";
+grid-template-areas: "header header" "sidebar content comment";
 
 gap: 5px;
-grid-template-columns: 160px; 1fr;
-grid-template-rows: 100px; 1fr;
+grid-template-columns: 160px 1fr;
+grid-template-rows: 100px 1fr;
 
 }
 
 .header {
-
-    height: 100px;
     grid-area: header;
-    background-color: red;
-    align-items: center;
-    justify-items: center;
-}
+    height: 100px;
+    background-color: blue;
+    place-items: center;
+   }
 
 .sidebar {
     grid-area: sidebar;
@@ -26,7 +24,7 @@ grid-template-rows: 100px; 1fr;
 .review {
      grid-area: content;
      height: 1000px;
-     background-image: url('1.jpeg');
+
      background-repeat: no-repeat;
      background-position: left 0px top 250px;
 
@@ -39,9 +37,9 @@ grid-template-rows: 100px; 1fr;
 }
 
 .comment {
+    grid-area: comment;
     display: inline-block;
     width: 200px;
     margin: 10px;
     vertical-align: top;
-}
 }
